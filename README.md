@@ -1,8 +1,8 @@
-# 📸 Dynamic Photo Sequence Generator
+# Dynamic Photo Sequence Generator
 
 A Python script that creates high-speed, dynamic video sequences from your photos. It features a "Crescendo" effect (accelerating speed), organic Zoom/Pan movements, and automatic screen filling (no black bars!).
 
-## ✨ Features
+## Features
 
 * **Crescendo Effect:** Images start slow and progressively speed up to a frenzy.
 * **High-Speed Loop:** Optionally keeps looping the images at max speed after the crescendo.
@@ -13,7 +13,7 @@ A Python script that creates high-speed, dynamic video sequences from your photo
 
 ---
 
-## 🔰 Prerequisites (Read this first!)
+## Prerequisites (Read this first!)
 
 If you are new to Python or command lines, don't worry. Follow these two steps to prepare your computer.
 
@@ -21,7 +21,7 @@ If you are new to Python or command lines, don't worry. Follow these two steps t
 You need Python to run the script.
 1.  Go to [python.org/downloads](https://www.python.org/downloads/).
 2.  Click the yellow **"Download Python"** button.
-3.  **⚠️ IMPORTANT:** When running the installer, make sure to check the box that says **"Add Python to PATH"** at the bottom of the window before clicking "Install".
+3.  **IMPORTANT:** When running the installer, make sure to check the box that says **"Add Python to PATH"** at the bottom of the window before clicking "Install".
 
 ### 2. Get the "Engine" (FFmpeg)
 This script uses a tool called FFmpeg to build the video. You don't need to install it deeply, just download it.
@@ -33,7 +33,7 @@ This script uses a tool called FFmpeg to build the video. You don't need to inst
 
 ---
 
-## 📥 Installation
+## Installation
 
 1.  **Download this Code:**
     * Click the green **Code** button at the top of this GitHub page.
@@ -52,7 +52,7 @@ MyProjectFolder/
 └── README.md
 ```
 
-## 🚀 How to Use (The Easy Way)
+## How to Use (The Easy Way)
 Step 1: Initialize
 
 1. Open your project folder.
@@ -80,7 +80,7 @@ python video_maker.py
 ```
 3. Wait for the process to finish. Your new video will appear in the main folder! 🎉
 
-## ⚙️ Configuration
+## Configuration
 
 Want to change the speed, resolution, or turn off the zoom? Right-click on video_maker.py and select "Edit with Notepad" (or any text editor).
 
@@ -100,7 +100,7 @@ CRESCENDO_DURATION = 10   # How long the accelerating part lasts
 FINAL_LOOP_DURATION = 5   # How long the max-speed loop lasts at the end
 
 Save the file after making changes and run the script again.
-📝 Troubleshooting
+Troubleshooting
 
 "python is not recognized...": This means you didn't check the "Add Python to PATH" box when installing Python. Reinstall Python and make sure to check that box.
 
@@ -108,5 +108,5 @@ Save the file after making changes and run the script again.
 
 Video has black bars? The script handles this automatically! It uses "Aspect Fill" to crop and fill the screen, so no black bars should appear.
 
-## 📄 License
+## License
 Free to use and modify!
