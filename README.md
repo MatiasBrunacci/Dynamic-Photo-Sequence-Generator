@@ -86,21 +86,35 @@ Want to change the speed, resolution, or turn off the zoom? Right-click on video
 
 Look for this section at the top:
 
-# --- MAIN CONFIGURATION ---
-TARGET_FPS = 30 
-OUTPUT_RESOLUTION = '1920x1080' # You can change to '1080x1920' for TikTok/Shorts
+--- MAIN CONFIGURATION ---  
+TARGET_FPS: Defines the smoothness (fluidity) of the video.
+- 30: Standard for web video.
+- 60: Very fluid movement (the file size will be larger).
 
-# --- BEHAVIOR ---
-RANDOM_ORDER = 1       # 1 = Shuffle images, 0 = Sort by Date
-ENABLE_ZOOM = 1        # 1 = ON, 0 = OFF (Static images)
-CRESCENDO_MODE = 1     # 1 = Speed up over time, 0 = Constant speed
+OUTPUT_RESOLUTION: The size and shape of the video (Width x Height).
+- '1920x1080': Horizontal Full HD (YouTube, TV).
+- '1080x1920': Vertical Full HD (TikTok, Instagram Reels, Shorts).
 
-# --- TIMING (Seconds) ---
-CRESCENDO_DURATION = 10   # How long the accelerating part lasts
-FINAL_LOOP_DURATION = 5   # How long the max-speed loop lasts at the end
+--- BEHAVIOR ---  
+RANDOM_ORDER: Decides the order in which the photos appear.
+- 1: Random. Photos are shuffled.
+- 0: Chronological. Photos appear by creation date.
+
+ENABLE_ZOOM: Activates movement in the photos.
+- 1: Activated. Applies a smooth zoom and pan ("Ken Burns Effect").
+- 0: Deactivated. Images remain static (faster processing).
+
+CRESCENDO_MODE: Controls the sequence speed.
+- 1: Acceleration Mode. Starts slow and ends very fast.
+- 0: Constant Speed. All photos last the same duration.
+
+--- TIMING (Seconds) ---  
+CRESCENDO_DURATION: (In seconds) How long the section of the video lasts where the photos are accelerating.  
+FINAL_LOOP_DURATION: (In seconds) How much extra time the video spends looping images at maximum speed at the end. If you set 0, the video ends right when the crescendo finishes.
 
 Save the file after making changes and run the script again.
-Troubleshooting
+
+## Troubleshooting
 
 "python is not recognized...": This means you didn't check the "Add Python to PATH" box when installing Python. Reinstall Python and make sure to check that box.
 
